@@ -1,0 +1,73 @@
+			List<Warrior> warriors = new List<Warrior>()
+			{
+				new Warrior() { Height = 100 },
+				new Warrior() { Height = 80 },
+				new Warrior() { Height = 100 },
+				new Warrior() { Height = 70 }
+			};
+
+			List<Person> people = new List<Person>()
+            {
+                new Buyer() { Age = 20 },
+                new Buyer() { Age = 25 },
+                new Buyer() { Age = 20 },
+                new Supplier() { Age = 22 },
+                new Supplier() { Age = 20 }
+            };
+
+            string st1 = "I am a cat";
+            string st2 = "I am a dog";
+            List<int> ints = new List<int>() { 1, 2, 2, 2, 3, 3, 4, 5, 6, 5, 6, 5, 6, 5, 3, 4, 5, 6, 7, 8, 8, 4, 3 };
+            List<int> ints2 = new List<int>() { 3, 2, 3, 5, 8, 43, 5, 67, 1, 2, 3, 7, 7, 7, 6, 5, 2, 1, 1, 1, 1, 1 };
+
+			string[] catNames = { "Lucky", "Bella", "Luna", "Oreo", "Simba", "Toby", "Loki", "Oscar" };
+			string[] catNames2 = { "Lucky", "Bella", "Luna", "Oreo", "Simba", "Toby", "Loki", "Oscar" };
+			List<int> numbers = new List<int>() { 5, 6, 3, 2, 1, 5, 6, 7, 8, 4, 234, 54, 14, 653, 3, 4, 5, 6, 7 };
+			int[] arrayOfNumbers = { 5, 6, 3, 2, 1, 5, 6, 7, 8, 4, 234, 54, 14, 653, 3, 4, 5, 6, 7 };
+			object[] mix = { 1, "string", 'd', new List<int>() { 1, 2, 3, 4 }, new List<int>() { 5, 2, 3, 4 }, "dd", 's', "Hello Kitty", 1, 2, 3, 4, };
+
+            List<Person> people3 = new List<Person>()
+            {
+                new Buyer2() { Age = 20 , ID = 1, Height = 125, Weight = 77},
+                new Buyer2() { Age = 25 , ID = 2, Height = 150, Weight = 88},
+                new Buyer2() { Age = 20 , ID = 5, Height = 100, Weight = 58},
+                new Supplier2() { Age = 22 },
+                new Supplier2() { Age = 20 }
+            };
+
+			// Concatenating Collections
+			int[] intsa = new int[] { 1, 2, 2, 2, 3, 3, 4, 5, 6, 5, 6, 5, 6, 5, 3, 4, 5, 5, 6, 7, 8, 8, 4, 3 };
+			int[] intsb = new int[] { 1, 2, 2, 2, 3, 3, 4, 5, 6, 5 };
+			int[] intsc = new int[] { 1, 2, 2, 2, 2, 2, 2 };
+			int[] intse = new int[] { 1, 2, 2, 2, 3, 3 };
+
+
+
+	internal class Person
+	{
+
+	}
+
+	internal class Buyer : Person
+	{
+		public int Age { get; set; }
+	}
+
+	internal class Supplier : Person
+	{
+		public int Age { get; set; }
+	}
+
+	internal class Buyer2 : Person
+	{
+		public int Age { get; set; }
+		public int ID { get; set; }
+		public int Height { get; set; }
+		public int Weight { get; set; }
+	}
+
+	internal class Supplier2 : Person
+	{
+		public int Age { get; set; }
+	}
+
